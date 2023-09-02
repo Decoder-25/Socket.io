@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css"> <!-- You can create a CSS file for styling -->
     <title>Chat App</title>
 </head>
 <body>
-    <h1>Chat app using sockets</h1>
-
-    <button id="btn">Click me</button>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat App using Sockets</h1>
+        </div>
+        <div class="message-container">
+            <ul id="msglist"></ul>
+        </div>
+        <div class="input-container">
+            <input type="text" id="newmsg" placeholder="Type your message...">
+            <button id="btn">Send</button>
+        </div>
+    </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
